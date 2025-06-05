@@ -1,4 +1,4 @@
-# SimpleIPAM - Simple IP address management
+# SimpleIPAM - Simple IP address management - INCLUDE MAC
 
 
 ## What is SimpleIPAM?

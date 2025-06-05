@@ -38,6 +38,7 @@
              <th width="100px">IP Address</th>
              <th width="100px">Subnet mask</th>
              <th>Host</th>
+             <th>MAC</th>
              <th>Note</th>
              <th width="120px">Operation</th>
          </tr>
@@ -48,6 +49,7 @@
              <td><?php echo $host['ip_address']; ?></td>
              <td><?php echo $host['subnet_mask']; ?></td>
              <td><?php echo $host['host']; ?></td>
+             <td><?php echo $host['mac_address']; ?></td>
              <td><?php echo $host['note']; ?></td>
              <td>
                   <button class="btn btn-warning btn-xs" onclick="edit_host(<?php echo $host['id'];?>)">
@@ -67,6 +69,7 @@
                   <th>IP Address</th>
                   <th>Subnet mask</th>
                   <th>Host</th>
+                  <th>MAC</th>
                   <th>Note</th>
                   <th>Operation</th>
               </tr>
@@ -150,6 +153,7 @@
             $('[name="ip_address"]').val(data.ip_address);
             $('[name="subnet_mask"]').val(data.subnet_mask);
             $('[name="host"]').val(data.host);
+            $('[name="mac_address"]').val(data.mac_address);
             $('[name="note"]').val(data.note);
 
             $('#modal_form').modal('show'); // show bootstrap modal when complete loaded
@@ -273,6 +277,16 @@
               <label class="control-label col-md-3">Host</label>
               <div class="col-md-6">
                 <input name="host" placeholder="test-server-01" class="form-control" type="text">
+                <span class="help-block"></span>
+              </div>
+              <div class="col-md-3">
+                <p class="text-left">*Required</p>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-md-3">mac_address</label>
+              <div class="col-md-6">
+                <input name="mac_address" placeholder="test-server-01" class="form-control" type="text">
                 <span class="help-block"></span>
               </div>
               <div class="col-md-3">

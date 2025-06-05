@@ -7,6 +7,7 @@ CREATE TABLE `hosts` (
 	`ip_address`	TEXT NOT NULL UNIQUE,
 	`subnet_mask`	TEXT,
 	`host`	TEXT,
+	`mac_address`	TEXT,
 	`note`	TEXT,
 	PRIMARY KEY(`id`)
 );
